@@ -1,17 +1,21 @@
+class base {
+    include ssh
+}
+
 node 'puppet.example.com' {
-  include ssh
+    include base
 }
 
 node 'web.example.com' {
-  include ssh
+    include base
 }
 
 node 'db.example.com' {
-  include ssh
+    include base
 }
 
 node 'mail.example.com' {
-  include ssh
+    include base
 }
 
 
