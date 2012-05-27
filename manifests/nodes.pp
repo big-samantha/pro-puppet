@@ -16,6 +16,7 @@ node 'db.example.com' {
 
 node 'mail.example.com' {
     include base
+    include postfix
 }
 
 
