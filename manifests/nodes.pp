@@ -12,6 +12,7 @@ node 'web.example.com' {
 
 node 'db.example.com' {
     include base
+    include mysql
 }
 
 node 'mail.example.com' {
