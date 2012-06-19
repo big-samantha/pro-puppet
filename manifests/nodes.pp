@@ -1,13 +1,17 @@
 class base {
-    include ssh
+    include ssh, puppet
 }
 
 node 'puppet.example.com' {
     include base
+    include puppet::master
 }
 
 node 'web.example.com' {
     include base
+    include apache
+
+    apache::vhost { ''
 }
 
 node 'db.example.com' {
